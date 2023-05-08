@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Proyecto-Final</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;600&display=swap" 
+            rel="stylesheet">
+
+      
+    <style></style>
+  </head>
+
+  <body>
+    <div class="page">
+      <div class="header">
+        <header>
+          <nav class="navegacion">
+            <div class="navegacion-contenedor-botones">
+              <a href="./historia.html" class="boton" id="Boton1">HISTORIA</a>
+              <a href="./juguemos.html" class="boton" id="Boton2">JUGUEMOS</a>
+            </div>
+            <div class="navegacion-contenedor-logo">
+              <a href="/index.html">
+                <svg width="200" height="80">
+                  <rect
+                    x="45"
+                    y="5"
+                    width="60"
+                    height="35"
+                    rx="5"
+                    id="mon1"
+                    fill="#F0E9D2"
+                  ></rect>
+                  <rect
+                    x="50"
+                    y="10"
+                    width="50"
+                    height="25"
+                    rx="5"
+                    id="mon2"
+                    fill="#495579"
+                  ></rect>
+                  <polygon
+                    points="55 45 ,95 45,115 62,30 62"
+                    fill="#F0E9D2"
+                    id="tec1"
+                  ></polygon>
+                  <polygon
+                    points="57 48 ,92 48,104 58,43 58"
+                    fill="#495579"
+                    id="tec2"
+                  ></polygon>
+                </svg>
+              </a>
+            </div>
+          </nav>
+        </header>
+      </div>
+
+      <div class="main">
+        <main>
+          <div class="contenedor-titulo">
+            <h1 class="titulo">JUGUEMOS UN POCO</h1>
+          </div>
+          <section class="contenedor-section">
+            <h2 class="texto-contenido">Armemos el rompecabezas y veamos que imagen es...</h2>
+            <div class="contenedor-rompecabezas">
+              <div class="caja-a-soltar" id="droptarget">
+                <p id="texto">Arrastre y suelte las imagenes aqui</p>
+              </div>
+              <div class="caja-a-soltar" id="droptarget">
+                <p id="texto">Arrastre y suelte las imagenes aqui</p>
+              </div>
+              <div class="caja-a-soltar" id="droptarget">
+                <p id="texto">Arrastre y suelte las imagenes aqui</p>
+              </div> 
+            </div>
+            <div class="contenedor-imagenes">
+              <img src="./imagenes/rompe2.png" draggable='true' class="img" id="imagen1"></img>
+              <img src="./imagenes/Rompe1.png" draggable='true' class="img" id="imagen2"></img>
+              <img src="./imagenes/Rompe3.png" draggable='true' class="img" id="imagen3"></img> 
+            </div>
+            <div class="boton-container">
+              <button onclick="reinicio()"class="boton-reinicio">Reinicio</button>
+            </div>
+         </section>
+
+        </main>
+      </div>
+        
+    </div>
+          
+    </body>
